@@ -147,15 +147,15 @@ class ProductDescription extends React.Component<
     const { primaryPicker, secondaryPicker } = this.state;
     let variant;
 
-    if (!secondaryPicker && primaryPicker) {
+    if (!secondaryPicker && primaryPicker && this.props.productVariants[0].name !== "") {
       variant = productVariants.find(
         variant => variant.name === `${primaryPicker.selected}`
       );
-    } else if (secondaryPicker && primaryPicker) {
+    } else if (secondaryPicker && primaryPicker && this.props.productVariants[0].name !== "") {
       variant = productVariants.find(
         variant =>
           variant.name ===
-          `${primaryPicker.selected} / ${secondaryPicker.selected}`
+          `${secondaryPicker.selected} / ${primaryPicker.selected}`
       );
     } else {
       variant = this.props.productVariants[0];

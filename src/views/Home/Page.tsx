@@ -1,11 +1,38 @@
-import "./scss/index.scss";
+// import "./scss/index.scss";
 
-import classNames from "classnames";
+import "./scss/style.css";
+
+import "./scss/bootstrap.css";
+
+// import classNames from "classnames";
+
 import * as React from "react";
-import { Link } from "react-router-dom";
 
-import { Button, Loader, ProductsFeatured } from "../../components";
-import { generateCategoryUrl } from "../../core/utils";
+// import { Link } from "react-router-dom";
+
+// import {ProductsFeatured} from "../../components";
+
+import SliderWrapper from "../../components/SliderWrapper";
+
+import CollectionMain from "../../components/CollectionMain"
+
+import CollectionOfShades from "../../components/CollectionOfShades";
+
+// import SlideOne from "../../components/SlideOne";
+
+// import SlideTwo from "../../components/SlideTwo";
+
+import SoicalLinks from "../../components/SocialMediaMain";
+
+import ProductSection from "../../components/ProductSection";
+
+import PartnershipSectionMain from "../../components/PartnershipSectionMain";
+
+import FollowOnInstegramMain from "../../components/FollowOnInstegramMain";
+
+import NewsLetterSubscriptionMain from "../../components/NewsLetterSubscriptionMain";
+
+// import { generateCategoryUrl } from "../../core/utils";
 
 import {
   ProductsList_categories,
@@ -15,7 +42,7 @@ import {
 
 import { structuredData } from "../../core/SEO/Homepage/structuredData";
 
-import noPhotoImg from "../../images/no-photo.svg";
+// import noPhotoImg from "../../images/no-photo.svg";
 
 const Page: React.FC<{
   loading: boolean;
@@ -27,71 +54,65 @@ const Page: React.FC<{
     <script className="structured-data-list" type="application/ld+json">
       {structuredData(shop)}
     </script>
-    <div
-      className="home-page__hero"
-      style={
-        backgroundImage
-          ? { backgroundImage: `url(${backgroundImage.url})` }
-          : null
-      }
-    >
-      <div className="home-page__hero-text">
-        <div>
-          <span className="home-page__hero__title">
-            <h1>Final reduction</h1>
-          </span>
+      <section id="slider">
+        <div className="container">
+          <SoicalLinks />
+          <SliderWrapper />
+          {/* <CarouselTest>
+          </CarouselTest> */}
         </div>
-        <div>
-          <span className="home-page__hero__title">
-            <h1>Up to 70% off sale</h1>
-          </span>
+      </section>
+      <section id="collection2020">
+        <CollectionMain />
+      </section>
+      <section id="shades_collection">
+        <CollectionOfShades />
+      </section>
+      <section id="products"> 
+        <ProductSection />
+      </section>
+      <section id="partnership">
+        <PartnershipSectionMain />
+      </section>
+      {/* Follow on Instagram   */}
+      <section id="follow_instagram">
+        <FollowOnInstegramMain />
+      </section>
+        
+      {/* Newsletter Subscription   */}
+      <section id="newsletter">
+        <NewsLetterSubscriptionMain />
+      </section>
+      {/* <ProductsFeatured /> */}
+      {/* <div className="home-page__categories">
+        <div className="container">
+          <h3>Shop by category</h3>
+          <div className="home-page__categories__list">
+            {categories.edges.map(({ node: category }) => (
+              <div key={category.id}>
+                <Link
+                  to={generateCategoryUrl(category.id, category.name)}
+                  key={category.id}
+                >
+                  <div
+                    className={classNames("home-page__categories__list__image", {
+                      "home-page__categories__list__image--no-photo": !category.backgroundImage,
+                    })}
+                    style={{
+                      backgroundImage: `url(${
+                        category.backgroundImage
+                          ? category.backgroundImage.url
+                          : noPhotoImg
+                      })`,
+                    }}
+                  />
+                  <h3>{category.name}</h3>
+                </Link>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="home-page__hero-action">
-        {loading && !categories ? (
-          <Loader />
-        ) : (
-          <Link
-            to={generateCategoryUrl(
-              categories.edges[0].node.id,
-              categories.edges[0].node.name
-            )}
-          >
-            <Button>Shop sale</Button>
-          </Link>
-        )}
-      </div>
-    </div>
-    <ProductsFeatured />
-    <div className="home-page__categories">
-      <div className="container">
-        <h3>Shop by category</h3>
-        <div className="home-page__categories__list">
-          {categories.edges.map(({ node: category }) => (
-            <div key={category.id}>
-              <Link
-                to={generateCategoryUrl(category.id, category.name)}
-                key={category.id}
-              >
-                <div
-                  className={classNames("home-page__categories__list__image", {
-                    "home-page__categories__list__image--no-photo": !category.backgroundImage,
-                  })}
-                  style={{
-                    backgroundImage: `url(${
-                      category.backgroundImage
-                        ? category.backgroundImage.url
-                        : noPhotoImg
-                    })`,
-                  }}
-                />
-                <h3>{category.name}</h3>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+      </div> */}
   </>
 );
 

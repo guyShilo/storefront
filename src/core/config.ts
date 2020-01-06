@@ -17,23 +17,23 @@ export const STATIC_PAGES = [
 export const SOCIAL_MEDIA = [
   {
     ariaLabel: "facebook",
-    href: "https://www.facebook.com/mirumeelabs/",
+    href: "https://www.facebook.com/LuXoutShades/",
     path: require("../images/facebook-icon.svg"),
   },
   {
     ariaLabel: "instagram",
-    href: "https://www.instagram.com/mirumeelabs/",
+    href: "https://www.instagram.com/luxoutshades/",
     path: require("../images/instagram-icon.svg"),
   },
   {
-    ariaLabel: "twitter",
-    href: "https://twitter.com/getsaleor",
-    path: require("../images/twitter-icon.svg"),
+    ariaLabel: "youtube",
+    href: "https://www.youtube.com/channel/UCaqqsXVBCDjXcQBhe0J8Sjg",
+    path: require("../images/youtube-icon.svg"),
   },
   {
-    ariaLabel: "youtube",
-    href: "https://www.youtube.com/channel/UCg_ptb-U75e7BprLCGS4s1g/videos",
-    path: require("../images/youtube-icon.svg"),
+    ariaLabel:"Pintrest",
+    href: "https://www.pinterest.com/search/pins/?q=luxout%20shades",
+    path: require("../images/pintrest-icon.svg"),
   },
 ];
 export const META_DEFAULTS = {

@@ -1,0 +1,19 @@
+.build-shade-left-side .absolute-icons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 152px;
+    left: 30px;
+}
+.build-shade-left-side .absolute-icons.button-onclick{
+    left: 107px;
+    z-index: 2;
+}
+.build-shade-left-side .absolute-icons i img{
+    padding: 5px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.build-shade-left-side i.onclick img{
+    background: #343538;
+}

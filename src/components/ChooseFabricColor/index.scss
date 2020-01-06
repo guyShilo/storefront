@@ -1,0 +1,53 @@
+.light-grey {
+    color: #737680;
+}
+span {
+    font-size: 12px;
+}
+
+
+
+
+
+.down_items{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.down_items a{
+    text-decoration-color: #fdcd4a;
+
+}
+
+.down_items span{
+    font-size: 10px;
+    color: #343538;
+    position: relative;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+    border-bottom: 2px solid #f0b74d;
+}
+
+.choose-slider-nav {
+    border-bottom: 0.2px solid #FDCD4A;
+
+    /* yellow-logo */
+
+    // background: #FDCD4A;
+}
+
+.title-devideer {
+    border-top: 2px #fdcd4a solid;
+    width: 12%;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 2px;
+}
+
+.choose-your-fabric-color .top-details h3{
+    font-size: 12px;
+}
+
+.fabric-type{
+    overflow-y: scroll;
+}

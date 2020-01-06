@@ -9,7 +9,7 @@ import { OverlayContext } from "../../components/Overlay/context";
 import { ShopContext } from "../../components/ShopProvider/context";
 import Page from "./Page";
 
-const View: React.SFC<RouteComponentProps<{ token?: string }>> = ({
+const View: React.FC<RouteComponentProps<{ token?: string }>> = ({
   match: {
     params: { token },
   },

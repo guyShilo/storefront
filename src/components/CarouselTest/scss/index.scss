@@ -1,0 +1,20 @@
+
+.tp-bullets {
+  position: absolute;
+  display: block;
+  top: 50% !important;
+  left: auto !important;
+  right: -50px !important;
+  transform: translate(0, -50%) !important;
+}
+.tp-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  background: #d8d8d8 !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease;
+}
+.tp-bullet.selected,
+.tp-bullet:hover {
+  background: #343538 !important;
+}

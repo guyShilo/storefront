@@ -6,19 +6,40 @@ import UserAccount, {
   baseUrl as userAccountBaseUrl,
   userOrderDetailsUrl,
 } from "../userAccount/routes";
-import { OrderDetails } from "../userAccount/views";
-import { Account } from "../views/Account";
-import { ArticlePage } from "../views/Article";
-import { CartPage } from "../views/Cart";
-import { CategoryPage } from "../views/Category";
-import { CollectionPage } from "../views/Collection";
-import { HomePage } from "../views/Home";
+
 import OrderConfirmation from "../views/OrderConfirmation/View";
+
+import { Account } from "../views/Account";
+
+import { ArticlePage } from "../views/Article";
+
+import { BuildShadePage } from "../views/BuildShadePage";
+
+import { Gallery } from "../views/Gallery";
+
+import { Lookbook } from "../views/Lookbook";
+
+import { CartPage } from "../views/Cart";
+
+import { CategoryPage } from "../views/Category";
+
+import { CollectionPage } from "../views/Collection";
+
+import { HomePage } from "../views/Home";
+
+// import {HomePage} from "../views/HomeCopy";
+
+import { OrderDetails } from "../userAccount/views";
+
 import { ProductPage } from "../views/Product";
+
 import { SearchPage } from "../views/Search";
 
 const slugUrl = ":slug([a-z-0-9]+)/:id([0-9]+)/";
 export const baseUrl = "/";
+export const buildShadeUrl = `${baseUrl}build-shade/`;
+export const galleryUrl = `${baseUrl}gallery/`;
+export const lookBook = `${baseUrl}lookbook/`;
 export const searchUrl = `${baseUrl}search/`;
 export const categoryUrl = `${baseUrl}category/${slugUrl}`;
 export const collectionUrl = `${baseUrl}collection/${slugUrl}`;
@@ -36,6 +57,8 @@ export const paymentOptionsUrl = `${baseUrl}payment-options/`;
 export const Routes: React.FC = () => (
   <Switch>
     <Route exact path={baseUrl} component={HomePage} />
+    <Route path={galleryUrl} component={Gallery} />
+    <Route path={lookBook} component={Lookbook} />
     <Route path={searchUrl} component={SearchPage} />
     <Route path={categoryUrl} component={CategoryPage} />
     <Route path={collectionUrl} component={CollectionPage} />
@@ -51,6 +74,7 @@ export const Routes: React.FC = () => (
     <Route path={orderHistoryUrl} component={Account} />
     <Route path={addressBookUrl} component={Account} />
     <Route path={paymentOptionsUrl} component={Account} />
+    <Route path={buildShadeUrl} component={BuildShadePage} />
     <Route component={NotFound} />
   </Switch>
 );

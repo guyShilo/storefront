@@ -506,7 +506,7 @@ export interface ProductDetails_product_category_products_edges_node {
    * Lists the storefront product's pricing, the current price and discounts, only meant for displaying.
    */
   pricing: ProductDetails_product_category_products_edges_node_pricing | null;
-  category: ProductDetails_product_category_products_edges_node_category | null;
+  category: ProductDetails_product_category_products_edges_node_category;
 }
 
 export interface ProductDetails_product_category_products_edges {
@@ -773,7 +773,7 @@ export interface ProductDetails_product {
    */
   pricing: ProductDetails_product_pricing | null;
   descriptionJson: any;
-  category: ProductDetails_product_category | null;
+  category: ProductDetails_product_category;
   /**
    * List of images for the product.
    */

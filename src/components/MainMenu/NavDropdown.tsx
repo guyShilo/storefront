@@ -45,8 +45,8 @@ class NavDropdown extends React.PureComponent<
     return (
       <ul
         className={classNames({
-          "main-menu__nav-dropdown": true,
-          "main-menu__nav-dropdown--active": showDropDown,
+          "navbar-nav ml-auto": true,
+          "navbar-nav ml-auto--active": showDropDown,
         })}
         onMouseOver={this.showOverlayHandler}
         onMouseLeave={this.hideOverlayHandler}
@@ -56,8 +56,8 @@ class NavDropdown extends React.PureComponent<
         </li>
         <li
           className={classNames({
-            "main-menu__nav-dropdown__body": true,
-            "main-menu__nav-dropdown__body--visible": showDropDown,
+            "nav-item": true,
+            "nav-item active": showDropDown,
           })}
         >
           <ul>
