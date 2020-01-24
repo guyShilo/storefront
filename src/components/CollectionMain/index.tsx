@@ -30,7 +30,7 @@ const CollectionMain = () => {
                       alt="Latest Fabric"
                       className="img-fluid d-block mx-auto"
                     />
-                    {/* <div className="overlay">
+                    <div className="overlay_content">
                       <h2 className="main_title">
                         Explore Our<br />
                         Latest Fabrics
@@ -40,7 +40,7 @@ const CollectionMain = () => {
                         porta sem malesuada magna mollis .
                       </p>
                       <a href="#" className="btn_subscription">View More</a>
-                    </div> */}
+                    </div> 
                   </div>
                 </div>
                 <div className="col-lg-6">

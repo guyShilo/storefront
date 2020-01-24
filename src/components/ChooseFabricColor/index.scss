@@ -28,14 +28,13 @@ span {
     border-bottom: 2px solid #f0b74d;
 }
 
-.choose-slider-nav {
-    border-bottom: 0.2px solid #FDCD4A;
-
-    /* yellow-logo */
-
-    // background: #FDCD4A;
+.down_items span #g{    
+    display: none;
 }
 
+.choose-slider-nav-underline{
+    padding-top: 10px;
+}
 .title-devideer {
     border-top: 2px #fdcd4a solid;
     width: 12%;
@@ -44,10 +43,24 @@ span {
     margin-left: 2px;
 }
 
+// .choose-your-fabric-color{
+//     display: none;
+// }
 .choose-your-fabric-color .top-details h3{
     font-size: 12px;
 }
 
-.fabric-type{
+
+.fabric-type-list{
     overflow-y: scroll;
+    height: 500px;
+    width: 100%;
 }
+.selected-fabric-hidden { 
+    display:none; 
+}
+.ArrowImage{
+    height: 35%;
+}
+
+

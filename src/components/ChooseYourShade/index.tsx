@@ -3,40 +3,47 @@
 
  import "./index.scss";
 
- import ShadeExample from "./img/ShadeExample.png";
+//  import ShadeExample from "./img/ShadeExample.png";
+
+ import {
+    ProductsListNew_categories,
+    // ProductsListNew_categories_edges_node_products,
+    // ProductsListNew_categories_edges_node_products_edges
+  } from "../../views/BuildShadePage/types/ProductsListNew";
+
+  import YellowUnde from "../../images/YellowUnderLine.svg";
 
 
- const ChooseYourShade = () => {
-     
+ interface PageVars {
+    onClick: any;
+    shadesData: ProductsListNew_categories;
+}
+
+const ChooseYourShade: React.FC <PageVars> = ({ onClick, shadesData}) => {
+
+  const handleChange = (index) => e => {
+    onClick(index)    // param is the argument you passed to the function
+    // e is the event object that returned
+  };
   return (
     <div className="choose-your-shade">
-      <div className="img-slider-nav"></div>
-      <h3>Choose Your Shade</h3>
-      <ul className="img_slider_wrraper list_none">
-          <li className="img_slider_single_item">
-              <img src={ShadeExample}/>
-              <div className="single_title">
-                  <p>Double Roller</p>
-                  <span>i</span>
-              </div>
-          </li>
-          <li className="img_slider_single_item">
-              <img src={ShadeExample}/>
-              <div className="single_title">
-                  <p>Double Roller</p>
-                  <span>i</span>
-              </div>
-          </li>
-          <li className="img_slider_single_item">
-              <img src={ShadeExample}/>
-              <div className="single_title">
-                  <p>Double Roller</p>
-                  <span>i</span>
-              </div>
-          </li>
-
-      </ul>
-      </div>
+    <div className="choose-slider-nav">01/02</div>
+    <div className="choose-slider-nav-underLine-far"><img src={YellowUnde} /></div>   
+    <br/>
+    <h3><b>Choose Your Shade</b></h3>
+    <br/>
+    <ul className="img_slider_wrraper list_none">
+      {shadesData.edges.map((category, index) => (
+        <li className="img_slider_single_item" key={index}>
+            <img src={category.node.backgroundImage.url} onClick={handleChange(index)}/>
+            <div className="single_title">
+                <p>{category.node.name}</p>
+                <span>i</span>
+            </div>
+        </li>
+      ))}
+    </ul>
+    </div>
        );
   }
 export default ChooseYourShade;

@@ -7,12 +7,23 @@ import Page from "./Page";
 
 
 
+import {ChooseFabricQuery} from "./queries"
 
 
 export const View: React.FC = () => (
   <>
-    <Page />
-    <br />
+    <div className="home-page">
+    <ChooseFabricQuery>
+      {({data, loading}) => {
+          return (
+              <Page
+                categories={data.categories}
+              />
+          );
+      }}
+    </ChooseFabricQuery>
+  </div>
+  <br />
   </>
 );
 export default View;
