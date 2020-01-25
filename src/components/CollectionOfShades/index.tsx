@@ -25,8 +25,8 @@ componentDidMount(){
       margin: 50,
       nav: true,
       navText: [
-        "<img src='./images/arrow_left.svg'>",
-        "<img src='./images/arrow_right.svg'/>",
+        `<img src=${"src/img/arrow_left.svg"}>`,
+        `<img src=${"src/img/arrow_right.svg"}>`,
       ],
       autoplay: true,
       autoplayHoverPause: true,
