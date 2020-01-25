@@ -28,7 +28,7 @@ const ChooseYourShade: React.FC <PageVars> = ({ onClick, shadesData}) => {
   return (
     <div className="choose-your-shade">
     <div className="choose-slider-nav">01/02</div>
-    <div className="choose-slider-nav-underLine-far"><img src={YellowUnde} /></div>   
+    <div className="choose-slider-nav-underLine-far-fabric"><img src={YellowUnde} /></div>   
     <br/>
     <h3><b>Choose Your Shade</b></h3>
     <br/>

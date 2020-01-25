@@ -20,7 +20,7 @@ span {
 }
 
 .down_items span{
-    font-size: 10px;
+    font-size: 9px;
     color: #343538;
     position: relative;
     letter-spacing: 1.2px;
@@ -56,6 +56,16 @@ span {
     height: 500px;
     width: 100%;
 }
+
+  
+.fabric-type-list::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+.fabric-type-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: black;
+}
 .selected-fabric-hidden { 
     display:none; 
 }
@@ -64,3 +74,6 @@ span {
 }
 
 
+.choose-slider-nav-underLine-far-color{
+    padding-left: 140px;
+}

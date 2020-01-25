@@ -82,7 +82,7 @@ const ChooseFabricColor: React.FC<PageProps> = ({shadesData,shadeIndex, onClick 
                         </button> 
                     </div>
                     <div className="choose-slider-nav">02/02</div>
-                    <div className="choose-slider-nav-underLine-far"><img src={YellowUnde} /></div>   
+                    <div className="choose-slider-nav-underLine-far-color"><img src={YellowUnde} /></div>   
                     <br />
                     <h3 ><b>Choose Your Fabric + Color</b></h3>
                     <div className="selected-title">

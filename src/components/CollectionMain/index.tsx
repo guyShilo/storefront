@@ -35,7 +35,7 @@ const CollectionMain = () => {
                         Explore Our<br />
                         Latest Fabrics
                       </h2>
-                      <p className="content">
+                      <p className="content_white">
                         Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam
                         porta sem malesuada magna mollis .
                       </p>

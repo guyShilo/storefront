@@ -32,66 +32,7 @@
 /* .build-shade-left-side i.onclick img{
     background: #343538;
 } */
-.change_wall_color{
-    width: 118px;
-    position: absolute;
-    left: 0px;
-    background: #fafafa;
-    height: 940px;
-    display: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px 10px 32px 0px;
 
-}
-.close_button{
-    background: #3a3c44;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    float: right;
-    margin-left: 100%;
-    margin-bottom: 15px;
-}
-.close_button img{
-    max-width: 7px;
-    padding-left: 27%;
-    padding-bottom: 17%;
-}
-.change_wall_color h4{
-    text-align: center;
-    margin: 0px auto 30px;
-    max-width: 90px;
-    line-height: 1.56;
-    letter-spacing: 0.37px;
-}
-.change_wall_color ul{
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-    flex-direction: column;
-}
-.change_wall_color ul a{
-    text-decoration: none;
-    color: #212224;
-}
-.change_wall_color ul .single_color{
-    text-align: center;
-    margin: 0px auto 30px;
-}
-.change_wall_color .single_color .color_img{
-    background: #fff;
-    width: 28.7px;
-    height: 28.7px;
-    border-radius: 50%;
-    border: 0.2px #a3a5ad solid;
-    margin: 0px auto 5.3px;
-}
-.change_wall_color .single_color.choose_other .color_img img{
-    max-width: 12.8px;
-    padding-top: 25%;
-}
 .down_items{
     text-align: center;
     display: flex;
@@ -122,19 +63,7 @@
     top: 6%;
     bottom: -8px;
 }
-.select-color-wrraper{
-    display: none;
-    position: absolute;
-    width: 230px;
-    height: 300px;
-    left: 128px;
-    bottom: 0px;
-    background: #fafafa;
-    padding: 10px;
-}
-.select-color-wrraper p{
-    text-align: center;
-}
+
 
 .build-my-shade-main .build-shade-right-side{
     max-width: 400px;
@@ -154,17 +83,7 @@
     margin-bottom: 0px;
     overflow-y:hidden;
 }
-.choose-your-shade .img_slider_wrraper .img_slider_single_item{
-    width: 260px;
-    margin-bottom: 30px;
-}
-.choose-your-shade .img_slider_wrraper .img_slider_single_item:last-child{
-    margin-bottom: 0px;
-}
-.choose-your-shade .img_slider_wrraper .img_slider_single_item img{
-    max-width: 260px;
-    height: 260px;
-}
+
 .choose-your-shade .img_slider_single_item .single_title{
     display: flex;
     flex-direction: row;
@@ -173,10 +92,7 @@
     padding: 14px 10px;
     margin-top: -4px;
 }
-.choose-your-shade .img_slider_wrraper{
-    overflow-y: scroll;
-    height: 750px;
-}
+
 .choose-your-shade .img_slider_single_item p{
     margin: 0px;
 }
