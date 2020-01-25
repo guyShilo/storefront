@@ -11,7 +11,9 @@ import product_image_1 from "./img/Product1.png";
 
 import product_image_2 from "./img/Product2.png";
 
+import arrowLeft from "./img/arrow_left.svg";
 
+import arrowRight from "./img/arrow_right.svg"
 
 
  
@@ -25,8 +27,8 @@ componentDidMount(){
       margin: 50,
       nav: true,
       navText: [
-        `<img src=${"src/img/arrow_left.svg"}>`,
-        `<img src=${"src/img/arrow_right.svg"}>`,
+        `<img src=${arrowLeft}>`,
+        `<img src=${arrowRight}>`,
       ],
       autoplay: true,
       autoplayHoverPause: true,
