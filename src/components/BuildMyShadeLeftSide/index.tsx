@@ -22,7 +22,10 @@ import ChangeSettingType from "./ChangeSettingType"
 
 
 
-const BuildMyShadeLeftSide= () => {
+const BuildMyShadeLeftSide: React.FC<{
+  printOutFunc: any;
+  }> = ({ printOutFunc }) => {
+  
   const [isColorHidden, setIsColorHidden] = useState(true)
   const [isSettingHidden, setIsSettingHidden] = useState(true)
   const [changeColorActive, setChangeColorActive] = useState("absolute-icons")
@@ -30,8 +33,10 @@ const BuildMyShadeLeftSide= () => {
   const [blackButtonChangeColor, setBlackButtonBackground] = useState(brush)
   const [blackButtonChangeSetting, setBlackButtonBackgroundSetting] = useState(edit)
 
-
-
+  const printAction = () => {
+    window.focus()
+    window.print()
+  }
   const clickColorChange = () => {
     setBlackButtonBackgroundSetting(edit)
     setBlackButtonBackground(brush_black)
@@ -70,7 +75,7 @@ const BuildMyShadeLeftSide= () => {
           <div className={changeColorActive} style={{ zIndex: 2 }} >
             <button className={"color_button"} onClick={clickColorChange} ><img src={blackButtonChangeColor}/></button>
             <button className={"change_button"} onClick={clickChangeSetting}><img src={blackButtonChangeSetting}/></button>
-            <button className="print_button"><img src={print} /></button>
+            <button className="print_button" onClick={printAction}><img src={print} /></button>
           </div>
           {isColorHidden === false && isSettingHidden === true ?
           <ChangeWallColor closeOnClick={CloseAllAction} />

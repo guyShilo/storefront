@@ -4,17 +4,23 @@ import React from "react";
 import xpng from "../../images/x.svg";
 
 
-const BuildMyShadePopUp = () => {
+const BuildMyShadePopUp: React.FC<{
+    ClosePopUpAction: any;
+    fabricName: any;
+    }> = ({ ClosePopUpAction, fabricName }) => {
+        const ClosePopUp = () => (
+            ClosePopUpAction()
+        )
         return(
             <div className="build-my-shade-popup">
-        <div className="close_button"><img src={xpng}/></div>
+        <div className="close_button" onClick={ClosePopUp}><img src={xpng}/></div>
         <div className="popup-title-wrraper">
-            <h2 className="dark-grey">Double Roller</h2>
+        <h2 className="dark-grey">{fabricName}</h2>
             <span className="title-devideer"></span>
         </div>
         <div className="popup-content">
             <div className="content-block">
-                <p className="title">Product Details</p>
+                <p className="title-longer">Product Details</p>
                 <p>A beautiful basic light filtering solid that will help eliminate glare, maintain natural light and provide full privacy. Translucent with a subtle texture.</p>
             </div>
             <div className="content-block">
@@ -43,7 +49,7 @@ const BuildMyShadePopUp = () => {
                 <p>Approximately 15 business days</p>
             </div>
             <div className="slider-block">
-                <p className="title">Additional Details</p>
+                <p className="title-longer">Additional Details</p>
                 <div className="slider-block-content">
                     <div className="slider">
                         <img />
