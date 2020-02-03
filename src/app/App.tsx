@@ -7,7 +7,7 @@ import "../css/style.css";
 
 import "../css/bootstrap.css";
 
-import {MainMenu, MetaConsumer, OverlayManager } from "../components";
+import { MainMenu, MetaConsumer, OverlayManager } from "../components";
 
 import FooterMain from "../components/FooterMain";
 
@@ -32,7 +32,7 @@ const App: React.FC<RouteComponentProps> = ({
       <footer>
         {!orderConfirmationPage && <FooterMain />}
       </footer>
-      <OverlayManager />
+        <OverlayManager />
     </>
   );
 };
