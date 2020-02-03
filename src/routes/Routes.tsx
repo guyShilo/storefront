@@ -35,7 +35,6 @@ import { ProductPage } from "../views/Product";
 
 import { SearchPage } from "../views/Search";
 
-<<<<<<< HEAD
 import { AboutUs } from "../components/AboutUs/AboutUs";
 
 import { CheckOut } from "../components/CheckOut-Progress/CheckOut";
@@ -50,21 +49,6 @@ import { ShopFabric } from "../components/ShopFabric/ShopFabric";
 
 import { WarrantyPage } from "../components/Warranty/WarrantyPage";
 
-=======
-import { AboutUs } from "@temp/components/AboutUs/AboutUs";
-
-import { CheckOut } from "@temp/components/CheckOut-Progress/CheckOut";
-
-import { ContactUs } from "@temp/components/ContactUs/ContactUs";
-
-import { DashBoardHome } from "../../src/components/ProjectCenter/DashBoardHome";
-
-import { ShippingHandling } from "@temp/components/ShippingHandling/ShippingHandling";
-
-import { ShopFabric } from "@temp/components/ShopFabric/ShopFabric";
-
-import { WarrantyPage } from "@temp/components/Warranty/WarrantyPage";
->>>>>>> upstream/guy-branch
 
 const slugUrl = ":slug([a-z-0-9]+)/:id([0-9]+)/";
 export const baseUrl = "/";
