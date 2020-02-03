@@ -47,7 +47,7 @@ const MainMenu: React.FC = () => {
     <OverlayContext.Consumer>
       {overlayContext => (
         <nav className="main-menu" id="header">
-          <div className="main-menu__left">
+          <div className="main-menu __left">
             <TypedMainMenuQuery renderOnError displayLoader={false}>
               {({ data }) => {
                 const items = maybe(() => data.shop.navigation.main.items, []);
